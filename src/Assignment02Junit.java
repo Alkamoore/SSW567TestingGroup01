@@ -21,7 +21,7 @@ public class Assignment02Junit {
 			int a = 3;
 			int b = 3;
 			int c = 3;
-			String result = buggyTriangle.classifyTriangle(a, b, c);
+			String result = buggyTriangleFixed.classifyTriangle(a, b, c);
 			assertEquals(result, "Equilateral");
 			System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
 			System.out.println("Output: " + result);
@@ -34,7 +34,7 @@ public class Assignment02Junit {
 			int a = 3;
 			int b = 4;
 			int c = 5;
-			String result = buggyTriangle.classifyTriangle(a, b, c);
+			String result = buggyTriangleFixed.classifyTriangle(a, b, c);
 			assertEquals(result, "Right");
 			System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
 			System.out.println("Output: " + result);
@@ -47,7 +47,7 @@ public class Assignment02Junit {
 	 		int a = 4;
 	 		int b = 4;
 	 		int c = 6;
-	 		String result = buggyTriangle.classifyTriangle(a, b, c);
+	 		String result = buggyTriangleFixed.classifyTriangle(a, b, c);
 	 		assertEquals(result, "Isosceles"); 
 	 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
 			System.out.println("Output: " + result);
@@ -61,7 +61,7 @@ public class Assignment02Junit {
 	 		int a = 4;
 	 		int b = 5;
 	 		int c = 6;
-	 		String result = buggyTriangle.classifyTriangle(a, b, c);
+	 		String result = buggyTriangleFixed.classifyTriangle(a, b, c);
 	 		assertEquals(result, "Scalene"); 
 	 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
 			System.out.println("Output: " + result);
@@ -74,7 +74,7 @@ public class Assignment02Junit {
 	 		double a = 7.32;
 	 		double b = 7.32;
 	 		double c = 5.67;
-	 		String result = buggyTriangle.classifyTriangle(a, b, c);
+	 		String result = buggyTriangleFixed.classifyTriangle(a, b, c);
 	 		assertEquals(result, "InvalidInput"); 
 	 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
 			System.out.println("Output: " + result);
@@ -87,7 +87,7 @@ public class Assignment02Junit {
 	 		int a = 0;
 	 		int b = 0;
 	 		int c = 0;
-	 		String result = buggyTriangle.classifyTriangle(a, b, c);
+	 		String result = buggyTriangleFixed.classifyTriangle(a, b, c);
 	 		assertEquals(result, "InvalidInput"); 
 	 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
 			System.out.println("Output: " + result);
@@ -100,7 +100,7 @@ public class Assignment02Junit {
 	 		int a = -2;
 	 		int b = -3;
 	 		int c = -6;
-	 		String result = buggyTriangle.classifyTriangle(a, b, c);
+	 		String result = buggyTriangleFixed.classifyTriangle(a, b, c);
 	 		assertEquals(result, "InvalidInput"); 
 	 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
 			System.out.println("Output: " + result);
@@ -113,7 +113,7 @@ public class Assignment02Junit {
 	 		int a = 230;
 	 		int b = 20;
 	 		int c = 20;
-	 		String result = buggyTriangle.classifyTriangle(a, b, c);
+	 		String result = buggyTriangleFixed.classifyTriangle(a, b, c);
 	 		assertEquals(result, "InvalidInput"); 
 	 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
 			System.out.println("Output: " + result);
@@ -126,7 +126,7 @@ public class Assignment02Junit {
 	 		int a = 50;
 	 		int b = 7;
 	 		int c = 5;
-	 		String result = buggyTriangle.classifyTriangle(a, b, c);
+	 		String result = buggyTriangleFixed.classifyTriangle(a, b, c);
 	 		assertEquals(result, "NotATriangle"); 
 	 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
 			System.out.println("Output: " + result);

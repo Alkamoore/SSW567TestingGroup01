@@ -48,7 +48,7 @@ public class Assignment05Junit {
 			double b = 7.32;
 			double c = Math.sqrt(107.1648);
 			String result = Assignment05.classifyTriangle(a, b, c);
-			assertEquals(result, "Isosceles Triangle"); 
+			assertEquals(result, "Isosceles Right Triangle"); 
 			System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
 			System.out.println("Output: " + result);
 		}

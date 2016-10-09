@@ -35,7 +35,8 @@ public class Assignment05 {
 				else if(a == b || a == c || b == c)
 				{
 					//Determine if right triangle
-					if(((a * a) + (b * b)) == (c * c))
+					//if(((a * a) + (b * b)) == (c * c))
+					if(Math.abs((((a * a) + (b * b)) - (c * c))) < 0.001) //Corrected findBugs Error
 					{
 						triangle_type = "Isosceles Right Triangle";
 					}
@@ -47,9 +48,9 @@ public class Assignment05 {
 				//Determine if Scalene Triangle
 				else
 				{
-					if(((a * a) + (b * b)) == (c * c)  //Note: doesn't use Math.pow because that function tends to decrease precision
-					|| ((a * a) + (c * c)) == (b * b)
-					|| ((b * b) + (c * c)) == (a * a)) 
+					if(Math.abs((((a * a) + (b * b)) - (c * c))) < 0.001  //Note: doesn't use Math.pow because that function tends to decrease precision
+					|| Math.abs((((a * a) + (c * c)) - (b * b))) < 0.001
+					|| Math.abs((((b * b) + (c * c)) - (a * a))) < 0.001) // Corrected findBugs Error
 					{
 						triangle_type = "Scalene Right Triangle";
 					}
